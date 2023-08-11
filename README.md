@@ -3,4 +3,4 @@
 - 🌱 I’m currently learning Java Script
 - 💞️ I’m looking to learn new things 
 - 📫 Reach me in this e-mail drack.zero.nova@gmail.com 
-
+- 
