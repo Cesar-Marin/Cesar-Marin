@@ -1,0 +1,118 @@
+.tabs-container {
+
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+ 
+  justify-content: flex-start;
+  position: sticky;
+  top:0;  
+    
+  width: 100%;
+  background-color: #1a1a1a;
+  margin: 0;
+  
+  }
+  
+  .tabs-header {
+
+    display: flex;
+    flex: column;
+    background-color: #1a1a1a;
+
+  }
+  
+  .tab {
+
+    padding: 0 20px;
+    cursor: pointer;
+    border:  0.5pt solid #37373c;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+  }
+  
+  .tab:hover {
+      
+      background-color: #212223
+     
+  }
+
+  .tab:hover > button{
+    background-color: #212223;
+    color:#727272;
+    transition: all 0s ease-in-out;
+    
+    -webkit-transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    -ms-transition: all 0s ease-in-out;
+    -o-transition: all 0s ease-in-out;
+}
+
+  .tab:hover > button:hover{
+      
+    background-color: rgba(105, 105, 105, 0.1);
+    color: #007bff;
+   
+  }
+ 
+  .tab > button {
+    background-color: #1a1a1a;
+    color: #1a1a1a;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 15px;
+    padding: 0 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+   
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  
+}
+
+  .tab > button:focus {
+
+    color: #007bff;
+
+  }
+  
+  .tab > button:hover {
+     
+    color: #37373c;
+
+  }
+
+
+  .tab.active {
+
+    background-color: #212223;
+    border-top:  0.5pt solid #007bff;
+
+  }
+
+  .tab.active > button {
+    background-color: #212223;
+    color: #727272;
+
+  }
+
+  .tab.active > button:focus {
+    
+    color: #007bff;
+
+  }
+
+  .tab.active > button:hover {
+    transition: all 0.1s ease-in-out;
+    background-color: rgba(105, 105, 105, 0.1);
+    color: #007bff;
+
+  }

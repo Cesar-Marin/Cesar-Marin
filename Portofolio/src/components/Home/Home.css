@@ -1,0 +1,125 @@
+.main {
+    grid-column: 2/ 4;
+    grid-row:  2/ 3 ; 
+    width: 100%;
+    background-image: radial-gradient(circle,#2e3c51 2px,transparent 0);
+    background-size: calc(14.2857142857% - 1px) 100px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-animation: dotScroll 16s linear infinite;
+    animation: dotScroll 16s linear infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   box-shadow:  inset 0 50px 35px rgba(33, 34, 35, 1),
+   0 0 0  rgb(255, 255, 255);
+  
+ 
+
+    
+   
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    width: 100%;
+    padding: 5px;
+}
+
+
+
+
+
+.main__logo > object {
+    
+    width: 100%;
+    height: 100%;
+   
+    
+}
+
+.main__content {
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.main__title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: 100;  
+    padding: 10px 10px; 
+  
+  
+}
+
+.main__container {
+ 
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: center;
+    border: 1px solid #37373c;
+    border-radius: 10px;
+    background-color:#066fc1;
+    
+}
+
+.main__container:first-child {
+    margin-bottom: 15px;
+
+}
+
+.main__container:last-child {
+    margin-top: 15px;
+    
+}
+.main__pic {
+   
+    width: 80px;
+    height: 80px;
+    
+
+  
+}
+.main__pic > img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow:  inset 0 50px 50px rgb(7, 7, 185),    0 0 0  rgb(228, 3, 3);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.main__pic:first-child {
+    font-size: 45px;
+    padding: 2px;
+}
+
+.main__title > div > span {
+    display: block;
+    width: 400px;
+    min-height: 30px;
+    color: #727272;
+    font-size: 0.9rem;
+    font-weight: 100;
+    padding: 0 5px;
+    word-wrap: break-word;
+}

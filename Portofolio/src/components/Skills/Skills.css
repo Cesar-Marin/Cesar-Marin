@@ -1,0 +1,100 @@
+.skills-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    padding: 10px 10px;
+    height: 92vh;
+    background-color: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    
+}
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: center;
+    
+
+}
+
+.skills-title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: 100;  
+    padding: 10px 10px; 
+    color: #fff;
+}
+
+.skill{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    padding: 10px 10px;
+    border-radius: 10px;
+   
+    border: 1px solid #37373c;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+   
+}
+
+.skill:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background-color: #37373c;
+}
+
+.skills-title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-weight: 100;  
+    padding: 10px 10px; 
+    color: #fff;
+   
+}
+
+.skill-description{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: 100;  
+    padding: 10px 10px; 
+    color: #727272;
+}
+
+
+.skill-ico {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: 100;  
+    padding: 10px 10px; 
+   
+}
