@@ -10,7 +10,7 @@ const Skills = () => {
         <section className="skills-container">
             <h2 className="skills-title">{language === 'es' ? 'Habilidades: Mi experiencia y conocimientos' : 'Skills Portfolio: My Expertise and Abilities' }</h2>
             <div className="skills">
-               {translations[language].skills.map((skill, index) => (
+               {translations[language].skills.map((skill: { title: string; description: string; ico: any; className: string }, index: number) => (
                      <div className="skill" key={index}>
                         <h4 className="skill-title">{skill.title}</h4>
                         <p className="skill-description">{skill.description}</p>

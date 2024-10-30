@@ -16,7 +16,7 @@ function App() {
   const { language, translations } = useLanguage();
   const { tabs, addTab, activeTab } = useTabsContext();
   const [activeItems, setActiveItems] = useState<string>('home');
-  const [tabsHeader, setTabsHeader] = useState<string[]>([]);
+ 
 
   useEffect(() => {
    
