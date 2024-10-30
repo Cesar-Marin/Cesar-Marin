@@ -213,7 +213,7 @@ const enLang = {
       title: 'Contact Me',
       text: 'Have a question or want to work together? Let\'s chat! I\'d like to start by asking: How do you take your coffee?',
       location: 'Leon Gto, Mexico',
-      phone: '+52 477 510 71 18',
+      phone: '+52 477 484 03 11',
       email: 'drack.zero.nova@gmail.com',
      
       socialtxt: 'Connect with me on social media',
@@ -228,25 +228,25 @@ const enLang = {
           key: 'linkedin',
           label: 'Linkedin',
           icon: ['fab', 'linkedin'],
-          link: 'https://www.linkedin.com/in/cesar-marin/',
+          link: 'https://www.linkedin.com/in/cesar-marin-2a1447238/',
         },
         {
           key: 'instagram',
           label: 'Instagram',
           icon: ['fab', 'instagram'],
-          link: 'https://www.instagram.com/cesar_marin_/',
+          link: 'https://www.instagram.com/rock_oneiric/',
         },
         {
           key: 'facebook',
           label: 'Facebook',
           icon: ['fab', 'facebook'],
-          link: 'https://www.facebook.com/cesar.marin.754918/',
+          link: 'https://www.facebook.com/profile.php?id=100067584624265',
         },
         {
           key: 'twitter',
           label: 'Twitter',
           icon: ['fab', 'twitter'],
-          link: 'https://twitter.com/CesarMa_',
+          link: 'https://twitter.com/RockMan_Zero_',
         },
       ],
     

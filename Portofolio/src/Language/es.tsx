@@ -212,7 +212,7 @@ const esLang = {
     title: 'Contáctame',
     text: '¿Tienes alguna pregunta o quieres trabajar conmigo? ¡Hablemos! me gustaría empezar preguntando: ¿Cómo tomas tu café?',
     location: 'Leon Gto,  México',
-    phone: '+52 477 510 71 18',
+    phone: '+52 477 484 03 11',
     email: 'drack.zero.nova@gmail.com',
    
     socialtxt: 'Te comparto mis redes sociales',
