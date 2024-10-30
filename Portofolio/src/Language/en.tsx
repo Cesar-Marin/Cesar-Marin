@@ -1,5 +1,3 @@
-import p1 from '../assets/img/logo.png';
-
 const enLang = {
   spaceWork: {
     portofolio: 'Portofolio',
