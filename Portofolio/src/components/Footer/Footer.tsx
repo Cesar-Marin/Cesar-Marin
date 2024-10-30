@@ -4,7 +4,7 @@ import { useLanguage } from '../../hooks/Lang';
 
 export default function Footer() {
   const { language, setLanguageHandler, translations } = useLanguage();
-
+   const fecha = new Date().getFullYear();
   const handleLanguageChange = (event) => {
     setLanguageHandler(event.target.value);
   };
@@ -28,7 +28,7 @@ export default function Footer() {
           </select>
         </div>
         <div className='footer__copy'>
-          <p>© 2023 Cesar Marin</p>
+          <p>© {fecha} Cesar Marin</p>
         </div>
       </div>
     </footer>
