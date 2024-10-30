@@ -15,10 +15,14 @@ export default function Contact() {
         event.preventDefault();
         const form = document.getElementById('contactForm') as HTMLFormElement;
         const formData = new FormData(form);
-        const names = formData.get('name');
+        const names = formData.get('name') as FormDataEntryValue | null;
         const email = formData.get('email');
         const message = formData.get('message');
-        setName(names);
+        if (names && email && message) {
+            setName(names.toString());
+            form.reset();
+            
+        }
         setSend(true);
       }
       
@@ -38,7 +42,7 @@ export default function Contact() {
                         <div className='contact__container__info__item'>
                             <h3>{translations[language].contact.socialtxt}</h3>
                             <ul>
-                            {translations[language].contact.social.map((item, index) => {
+                            {translations[language].contact.social.map((item: { link: string, icon: any, label: string }, index: number) => {
                                 return (
                                     <li key={index}>
                                         <a href={item.link} target='_blank' rel="noreferrer">
@@ -57,7 +61,7 @@ export default function Contact() {
                     </div>
                   
                     <div className='contact__container__form'>
-                        <form action="" id="contactForm">
+                        <form action="" id="contactForm" onSubmit={capture}>
                             <fieldset>
                                 <label htmlFor="name">{translations[language].contact.form.name}</label>
                                 <input type="text" name='name' id='name' placeholder={translations[language].contact.form.namePlaceholder} required />
@@ -71,7 +75,7 @@ export default function Contact() {
                                 <textarea name="message" id="message" cols={30} rows={10} placeholder={translations[language].contact.form.messagePlaceholder} required ></textarea>
                             </fieldset>
                             <fieldset>
-    <button type='submit' onClick={capture}>
+    <button type='submit'>
       {send === false
         ? translations[language].contact.form.submit
         : `${translations[language].contact.form.submited}, ${name}`}

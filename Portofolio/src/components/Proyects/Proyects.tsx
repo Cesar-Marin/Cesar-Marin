@@ -14,7 +14,7 @@ const Proyects = () => {
                
                  
                        
-                     {translations[language].proyects.map(item => (
+                     {translations[language].proyects.map((item: { img: string; title: string; description: string; page?: string; repo?: string }) => (
                          <div className="proyects__container__card"> 
    <div className="proyects__container__card__img">
     <img src={item.img} alt="proyects" />

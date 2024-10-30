@@ -2,6 +2,11 @@
 import { useTabsContext } from '../../hooks/activeTab'; 
 import './TabsHeader.css';
 
+interface Tab {
+  key: string;
+  title: string;
+}
+
 interface TabsHeaderProps {
   tabs: Tab[];
 }
@@ -16,7 +21,7 @@ const TabsHeader: React.FC<TabsHeaderProps> = ({ tabs }) => {
         {tabs.map((tab, index) => (
           <div key={index} className={`tab ${activeTab === tab.key ? 'active' : ''}`} onClick={() => setActiveTab(tab.key)}>
             <span >{tab.title}</span>
-            <button onClick={() => removeTab(index)}>&#215;</button> {/* Botón de eliminación */}
+            <button onClick={() => removeTab(index)}>&#215;</button> 
           </div>
         ))}
       </div>

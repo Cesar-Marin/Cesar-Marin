@@ -18,7 +18,7 @@ export default function Nav() {
     setActiveTab(key);
     addTab({
         key: key,
-        title: translations[language].navigation.find(item => item.key === key)?.label || ''
+        title: translations[language].navigation.find((item: { key: string; label: string }) => item.key === key)?.label || ''
         });
     }
 
@@ -42,7 +42,7 @@ export default function Nav() {
 
         <div className='nav__icons'>
           <ul>
-            {translations[language].navigation.map(item => (
+            {translations[language].navigation.map((item: { key: string; label: string; icon: any; subItems?: { key: string; label: string; icon: any; className: string }[] }) => (
               <li key={item.key} onClick= {()=> newTab(item.key)}>
                 <a href={`#${item.key}`}>
                   <span>
@@ -75,7 +75,7 @@ export default function Nav() {
           </div>
 
           <ul className='nav__list'>
-            {translations[language].navigation.map((item, index) => (<>
+            {translations[language].navigation.map((item: { key: string; label: string; icon: any; subItems?: { key: string; label: string; icon: any; className: string }[] }, index: number) => (<>
               <li
                 key={item.key}
                 id={`${id}-${item.key}`}

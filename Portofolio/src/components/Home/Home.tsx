@@ -35,7 +35,7 @@ export default function Home ( ) {
                
             </div>
 
-            {translations[language].home.sub.map(item => (
+            {translations[language].home.sub.map((item: { title: string; subtitle: string }) => (
             <div className='main__container'>
              <div className='main__pic'>
              <FontAwesomeIcon icon={['fas', 'laptop-code']} />

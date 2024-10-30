@@ -19,7 +19,7 @@ export default function Me() {
                 <div className='me__container'>
                     <div className='me__container__info'>
                         <div className='me__container__info__item'>
-                            {translations[language].about.text.map((item, index) => {
+                            {translations[language].about.text.map((item: { text: string }, index: number) => {
                                 return (
                                     <p key={index}>{item.text}</p>
                                 )
@@ -31,7 +31,7 @@ export default function Me() {
                 <div className='me__container__hobbies'>
                     <h3>{translations[language].about.hobbies.label}  <FontAwesomeIcon icon={translations[language].about.hobbies.icon}/> </h3> 
                     <ul>
-                        {translations[language].about.hobbies.subItems.map((item, index) => {
+                        {translations[language].about.hobbies.subItems.map((item: { icon: any, label: string }, index: number) => {
                             return (
                                 <li key={index}>
                                     <FontAwesomeIcon className='me__container__hobbies__icon' icon={item.icon} />
