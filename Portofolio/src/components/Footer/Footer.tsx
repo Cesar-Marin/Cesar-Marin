@@ -5,7 +5,7 @@ import { useLanguage } from '../../hooks/Lang';
 export default function Footer() {
   const { language, setLanguageHandler, translations } = useLanguage();
    const fecha = new Date().getFullYear();
-  const handleLanguageChange = (event) => {
+  const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setLanguageHandler(event.target.value);
   };
 
