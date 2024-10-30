@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import Nav from './components/Nav/Nav';
 import TabsHeader from './components/Header/TabsHeader';
 import Home from './components/Home/Home';
@@ -20,13 +20,13 @@ function App() {
 
   useEffect(() => {
    
-    setActiveItems(activeTab);
+    setActiveItems(activeTab.toString());
   }, [activeTab]);
 
   useEffect(() => {
      
     const actualTabs = [...tabs]  ;
-    translations[language].navigation.forEach((item) => {
+    translations[language].navigation.forEach((item: { key: string; label: string }) => {
       for (let i = 0; i < actualTabs.length; i++) {
         if (actualTabs[i].key === item.key) {
            addTab({

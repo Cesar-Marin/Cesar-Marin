@@ -8,7 +8,7 @@ interface Tab {
 
 interface TabsContextType {
   tabs: Tab[];
-  activeTab: number;
+  activeTab: string;
   setActiveTab: (index: string) => void;
   addTab: (tab: Tab) => void;
   removeTab: (index: number) => void;
